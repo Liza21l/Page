@@ -47,6 +47,17 @@ const getProducts = () => {
 }
 getProducts()
 
+const idProduct = "mKhdHNCN"
+axios.get(`http://localhost:4000/products/get-item?id=${idProduct}`)
+    .then((res) => {
+        console.log(res.data)
+    })
+
+axios.get(`http://localhost:4000/products/get?page=3&limit=10`)
+    .then((res) => {
+        console.log(res.data)
+    })
+
 formEl.btnCreate.addEventListener('click', () => {
     const formData = {
         name: formEl.name.value,

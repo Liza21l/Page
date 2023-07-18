@@ -3,7 +3,7 @@ body{
     height: 100vh;
     background: #83c1fc;
     display: flex;
-    align-items: center;
+
     column-gap: 500px;
 }
 .form{
