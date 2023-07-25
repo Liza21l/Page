@@ -1,10 +1,13 @@
 body{
-    width: 100%;
-    height: 100vh;
-    background: #83c1fc;
+    background: url(./Frame\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.BlockForm{
+    margin: 50px 0px;
     display: flex;
-
-    column-gap: 500px;
+    justify-content: center;
+    column-gap: 15px;
 }
 .form{
     width: 180px;
@@ -16,23 +19,41 @@ body{
     border: 2px solid #ffffff;
     border-radius: 5px;
 }
+.Change{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    row-gap: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 5px; 
+}
 #formBtn{
     border-radius: 5px;
     height: 25px;
     background: #2eeb61;
+    cursor: pointer;
+    border: none;
+    color: rgb(78, 78, 78);
+}
+#btnChange{
+    border-radius: 5px;
+    height: 25px;
+    background: #2eeb61;
+    cursor: pointer;
     border: none;
     color: rgb(78, 78, 78);
 }
 .products_item{
     margin: 15px 0px;
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 220px;
     border: 2px solid #ffffff;
     display: flex;
     padding: 10px;
     flex-direction: column;
-    row-gap: 15px;
-    border: 2px solid #ffffff;
+    row-gap: 17px;
     border-radius: 10px;
 }
 .title{
@@ -51,6 +72,21 @@ body{
     color: white;
 }
 .btnDelete:hover{
-    transition-duration: 2s;
+    transition-duration: 1.5s;
     background: #fe6a6a;
+}
+#productCount{
+    text-align: center;
+    font-size: 25px;
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+}
+hr{
+    width: 420px;
+    height: 2.5px;
+    background: #d8f770;
+    border: none;
 }
